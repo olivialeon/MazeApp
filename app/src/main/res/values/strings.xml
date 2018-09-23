@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AMazeByOliviaLeonVandDelaneyBusching</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome"> WELCOME!</string>
+    <string name="picklevel"> Pick skill level.</string>
+    <string name="start"> Start </string>
+    <string name="explore"> Explore</string>
+    <string name="revisit"> Revisit </string>
+    <string name="mazegeneration"> Maze to the land of the living is being generated.</string>
+    <string name="playbuttn"> Play </string>
+    <string name="lostbutton"> Lost </string>
+    <string name="up"> Up</string>
+    <string name="down"> Down</string>
+    <string name="left"> Left</string>
+    <string name="right"> Right</string>
+    <string name="pauseplay"> Pause/play</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="winning_message">You won! Congrats you have found your familia!</string>
+    <string name="energy_consumed">   Engergy Consumed: </string>
+    <string name="path_length">Path Length:</string>
+    <string name="play_again">Play Again</string>
+    <string name="show_maze">Show Maze</string>
+    <string name="show_solution">Show Solution</string>
+    <string name="show_walls">Show Walls</string>
+
+
+    <string name="builders_prompt">Choose a maze configuration</string>
+    <string-array name="builders">
+        <item>DFS</item>
+        <item>Prim</item>
+        <item>Ellers</item>
+    </string-array>
+
+
+    <string name="drivers_prompt">Choose driver </string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="togglebutton2">ToggleButton</string>
+    <string name="finish_button">Finish</string>
+    <string-array name="drivers">
+        <item>Manual</item>
+        <item>Wall Follower</item>
+        <item>Pledge</item>
+        <item>Wizard</item>
+    </string-array>
+
+</resources>

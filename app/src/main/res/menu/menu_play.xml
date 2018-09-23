@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.wm.cs.cs301.soleonv.ui.AMazeActivity">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/showWalls"
+        android:checkable="true"
+        android:title="Wall" />
+    <item
+        android:id="@+id/showMap"
+        android:checkable="true"
+        android:title="Maze" />
+    <item android:id="@+id/showSolution"
+        android:title="Solution"
+        app:showAsAction="never"
+        android:checkable="true"/>
+
+</menu>

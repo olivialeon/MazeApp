@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cocolandscape">
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lostButton"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/down"
+        app:layout_constraintBottom_toBottomOf="@+id/energyLevelBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
+
+
+    <ToggleButton
+        android:id="@+id/showMaze"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="416dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/togglebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <TextView
+        android:id="@+id/showMazeLabel"
+        android:layout_width="95dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="@string/show_maze"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showSolutionLable"
+        android:layout_width="108dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="456dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="@string/show_solution"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ToggleButton
+        android:id="@+id/showSolution"
+        android:layout_width="85dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/togglebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/showWallsLabel"
+        android:layout_width="85dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text="@string/show_walls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/showWall"
+        android:layout_width="86dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/togglebutton2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/energyLevelBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="363dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <ToggleButton
+        android:id="@+id/pausebutton"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pauseplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835"
+        android:textOff="play"
+        android:textOn="pause"/>
+
+    <RelativeLayout
+        android:id="@+id/mazeLayout"
+        android:layout_width="352dp"
+        android:layout_height="293dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <edu.wm.cs.cs301.soleonv.falstad.NewMazePanel
+            android:id="@+id/mazepanel"
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            tools:layout_editor_absoluteY="133dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
